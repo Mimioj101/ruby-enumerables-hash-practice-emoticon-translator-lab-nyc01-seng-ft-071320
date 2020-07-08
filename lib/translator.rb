@@ -5,10 +5,15 @@ require 'yaml'
 
 
 def load_library(file_path)
+ emo =
  YAML.load_file("lib/emoticons.yml")
  emoticons_hash = {}
- emoticons_hash.each do |key, value|
-   emoticons_hash[key] = value
+     emo.each do |name,arrays|
+      emoticons_hash[name] ||= {}
+      frank_emo[name][:english] = arrays[0]
+      frank_emo[name][:japanese] = arrays[1]
+  end
+frank_emo
   end
 end
 
