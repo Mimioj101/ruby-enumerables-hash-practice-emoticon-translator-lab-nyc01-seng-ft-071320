@@ -5,7 +5,7 @@
 
 
 def load_library(file)
-
+  emoticons = hash.new
 end
 
 
