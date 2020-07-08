@@ -7,13 +7,13 @@ require 'yaml'
 def load_library(file_path)
  #code goes here
   emo = YAML.load_file("lib/emoticons.yml")
-  frank_emo = {}
+  emoticons_hash = {}
   emo.each do |name,arrays|
-      frank_emo[name] ||= {}
-      frank_emo[name][:english] = arrays[0]
-      frank_emo[name][:japanese] = arrays[1]
+      emoticons_hash[name] ||= {}
+      emoticons_hash[name][:english] = arrays[0]
+      emoticons_hash[name][:japanese] = arrays[1]
   end
-frank_emo
+emoticons_hash
 end
 
 
