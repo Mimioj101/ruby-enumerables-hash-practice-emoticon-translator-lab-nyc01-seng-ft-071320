@@ -6,7 +6,7 @@ require 'yaml'
 
 def load_library(file_path)
  #code goes here
-  emo = YAML.load_file("lib/emoticons.yml")
+  emo = YAML.load_file(file_path)
   emoticons_hash = {}
   emo.each do |name,arrays|
       emoticons_hash[name] ||= {}
