@@ -28,6 +28,6 @@ end
 
 
 
-def get_english_meaning
+def get_english_meaning(file_path, jap_emoticon)
  
 end
