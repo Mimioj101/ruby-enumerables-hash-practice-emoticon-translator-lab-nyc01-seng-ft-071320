@@ -4,8 +4,8 @@
 
 
 
-def load_library(file)
-  emoticons = hash.new(file)
+def load_library(file_path)
+  emoticons = hash.new(file_path)
 end
 
 
