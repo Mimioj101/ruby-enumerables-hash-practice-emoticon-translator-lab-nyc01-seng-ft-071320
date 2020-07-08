@@ -5,7 +5,7 @@
 
 
 def load_library(file_path)
-  emoticons = hash.new(file_path)
+  hash = YAML.load_file("file_path")
 end
 
 
