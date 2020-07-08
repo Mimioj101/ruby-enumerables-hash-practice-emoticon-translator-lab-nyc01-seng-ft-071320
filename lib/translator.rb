@@ -20,7 +20,7 @@ end
 
 
 
-def get_japanese_emoticon(file_path, emo)
+def get_japanese_emoticon(file_path, eng_emo)
    library = load_library('./lib/emoticons.yml')
   library.each do |meaning, idioms|
       return idioms[:japanese] if idioms[:english] == eng_emo
@@ -32,7 +32,7 @@ end
 
 
 
-def get_english_meaning(file_path, jap_emoticon)
+def get_english_meaning(file_path, jap_emo)
   library = load_library('./lib/emoticons.yml')
   library.each do |meaning, idioms|
     return meaning if idioms[:japanese] == jap_emo
